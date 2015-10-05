@@ -1,0 +1,35 @@
+body {
+  margin-top: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+ul li {
+  border: 1px solid #EEEEEE;
+  padding: 15px;
+}
+
+li hr {
+  margin: 15px 0;
+}
+
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0;
+}
+
+.no-button {
+  border: 0;
+  padding: 0;
+  margin: -20px 0 -20px 10px;
+}

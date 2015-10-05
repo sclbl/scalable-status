@@ -1,0 +1,20 @@
+<template name="stream">
+  {{#if status.count}}
+    <ul>
+      {{#each status}}
+        <li>
+          <span>{{body}}</span>
+          <hr />
+          <span class="clearfix">
+            <div class="u-pull-right">
+              {{formattedCreatedAt createdAt}}
+              <button class="no-button" data-action="remove"><i class="fa fa-trash fa-lg"></i></button>
+            </div>
+          </span>
+        </li>
+      {{/each}}
+    </ul>
+  {{else}}
+    <div class="text-center">There are currently no status available to display...</div>
+  {{/if}}
+</template>
